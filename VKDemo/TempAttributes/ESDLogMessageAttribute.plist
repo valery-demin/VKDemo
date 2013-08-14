@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>attributeName</key>
+		<string>ESDSerializable</string>
+		<key>attributeType</key>
+		<string>property</string>
+		<key>targetName</key>
+		<string>message</string>
+	</dict>
+	<dict>
+		<key>attributeName</key>
+		<string>ESDSerializable</string>
+		<key>attributeType</key>
+		<string>property</string>
+		<key>targetName</key>
+		<string>type</string>
+	</dict>
+	<dict>
+		<key>attributeName</key>
+		<string>ESDSerializable</string>
+		<key>attributeType</key>
+		<string>property</string>
+		<key>targetName</key>
+		<string>timeStamp</string>
+	</dict>
+	<dict>
+		<key>attributeName</key>
+		<string>ESDSerializable</string>
+		<key>attributeType</key>
+		<string>property</string>
+		<key>targetName</key>
+		<string>userInfo</string>
+	</dict>
+	<dict>
+		<key>attributeName</key>
+		<string>ESDSerializable</string>
+		<key>attributeType</key>
+		<string>property</string>
+		<key>targetName</key>
+		<string>level</string>
+	</dict>
+	<dict>
+		<key>attributeName</key>
+		<string>ESDSerializable</string>
+		<key>attributeType</key>
+		<string>class</string>
+		<key>targetName</key>
+		<string>ESDLogMessage</string>
+	</dict>
+</array>
+</plist>

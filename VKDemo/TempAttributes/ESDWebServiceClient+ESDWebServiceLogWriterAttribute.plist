@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>attributeMetadata</key>
+		<dict>
+			<key>method</key>
+			<string>POST</string>
+		</dict>
+		<key>attributeName</key>
+		<string>ESDWebServiceCall</string>
+		<key>attributeType</key>
+		<string>method</string>
+		<key>targetName</key>
+		<string>logMessages:completionBlock:</string>
+	</dict>
+	<dict>
+		<key>attributeMetadata</key>
+		<dict>
+			<key>defaultValue</key>
+			<string>ESDLogMessageTypeConsoleOnly</string>
+		</dict>
+		<key>attributeName</key>
+		<string>ESDWebServiceLogger</string>
+		<key>attributeType</key>
+		<string>method</string>
+		<key>targetName</key>
+		<string>logMessages:completionBlock:</string>
+	</dict>
+	<dict>
+		<key>attributeMetadata</key>
+		<dict>
+			<key>cacheDisabled</key>
+			<string>YES</string>
+		</dict>
+		<key>attributeName</key>
+		<string>ESDWebServiceCache</string>
+		<key>attributeType</key>
+		<string>method</string>
+		<key>targetName</key>
+		<string>logMessages:completionBlock:</string>
+	</dict>
+</array>
+</plist>

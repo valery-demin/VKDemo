@@ -1,0 +1,1113 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A797F6C17B9371800F59C1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A797F6B17B9371800F59C1C /* UIKit.framework */; };
+		1A797F6E17B9371800F59C1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A797F6D17B9371800F59C1C /* Foundation.framework */; };
+		1A797F7017B9371800F59C1C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A797F6F17B9371800F59C1C /* CoreGraphics.framework */; };
+		1A797F7617B9371800F59C1C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A797F7417B9371800F59C1C /* InfoPlist.strings */; };
+		1A797F7817B9371800F59C1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A797F7717B9371800F59C1C /* main.m */; };
+		1A797F7C17B9371800F59C1C /* VKDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A797F7B17B9371800F59C1C /* VKDAppDelegate.m */; };
+		1A797F7E17B9371800F59C1C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A797F7D17B9371800F59C1C /* Default.png */; };
+		1A797F8017B9371800F59C1C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A797F7F17B9371800F59C1C /* Default@2x.png */; };
+		1A797F8217B9371800F59C1C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A797F8117B9371800F59C1C /* Default-568h@2x.png */; };
+		1A797F8517B9371800F59C1C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A797F8317B9371800F59C1C /* MainStoryboard.storyboard */; };
+		1A797F8F17B9389700F59C1C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A797F8E17B9389700F59C1C /* libz.dylib */; };
+		1A797F9117B9389E00F59C1C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A797F9017B9389E00F59C1C /* CoreData.framework */; };
+		1A797F9317B938A500F59C1C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A797F9217B938A500F59C1C /* CFNetwork.framework */; };
+		1A797F9917B93D4C00F59C1C /* TempAttributes in Resources */ = {isa = PBXBuildFile; fileRef = 1A797F9817B93D4C00F59C1C /* TempAttributes */; };
+		1A797F9C17B93E6100F59C1C /* VKDRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A797F9A17B93E6100F59C1C /* VKDRootViewController.m */; };
+		1A797FA617B93F1300F59C1C /* VKDModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A797FA417B93F1300F59C1C /* VKDModel.xcdatamodeld */; };
+		1A797FA817B93F3000F59C1C /* hat_vk.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A797FA717B93F3000F59C1C /* hat_vk.png */; };
+		1A797FAD17B93F4F00F59C1C /* VKDUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A797FA917B93F4F00F59C1C /* VKDUserCell.m */; };
+		1A797FAE17B93F4F00F59C1C /* VKDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A797FAA17B93F4F00F59C1C /* VKDDetailViewController.m */; };
+		1A797FB317B93F5B00F59C1C /* VKDUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A797FB117B93F5B00F59C1C /* VKDUser.m */; };
+		1A797FB417B93F5B00F59C1C /* VKDUserWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A797FB217B93F5B00F59C1C /* VKDUserWrapper.m */; };
+		1A797FB717B93F6100F59C1C /* VKDUIAssistance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A797FB517B93F6100F59C1C /* VKDUIAssistance.m */; };
+		1A797FBB17B93F6700F59C1C /* VKDAuthenticationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A797FB817B93F6700F59C1C /* VKDAuthenticationProvider.m */; };
+		1AA1378D17BAB167002F4A4E /* libSparkAttribute.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA1373717BAAEF9002F4A4E /* libSparkAttribute.a */; };
+		1AA1378E17BAB167002F4A4E /* libSparkCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA1374017BAAEF9002F4A4E /* libSparkCore.a */; };
+		1AA1378F17BAB167002F4A4E /* libSparkDAO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA1374917BAAEF9002F4A4E /* libSparkDAO.a */; };
+		1AA1379017BAB167002F4A4E /* libSparkLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA1375017BAAEF9002F4A4E /* libSparkLogger.a */; };
+		1AA1379117BAB167002F4A4E /* libSparkObservation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA1375517BAAEF9002F4A4E /* libSparkObservation.a */; };
+		1AA1379217BAB167002F4A4E /* libSparkProcessor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA1375E17BAAEF9002F4A4E /* libSparkProcessor.a */; };
+		1AA1379317BAB167002F4A4E /* libSparkReflection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA1376717BAAEF9002F4A4E /* libSparkReflection.a */; };
+		1AA1379417BAB167002F4A4E /* libSparkSerialization.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA1377017BAAEF9002F4A4E /* libSparkSerialization.a */; };
+		1AA1379517BAB167002F4A4E /* libSparkServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA1377917BAAEF9002F4A4E /* libSparkServices.a */; };
+		1AA1379617BAB167002F4A4E /* libSparkWebservice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA1378117BAAEF9002F4A4E /* libSparkWebservice.a */; };
+		1AA1379717BAB167002F4A4E /* libSparkWorkflow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA1378817BAAEF9002F4A4E /* libSparkWorkflow.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AA1373617BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA136EB17BAAEF7002F4A4E /* SparkAttribute.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 789669DA15CBD1CD003D4AFC;
+			remoteInfo = SparkAttribute;
+		};
+		1AA1373817BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA136EB17BAAEF7002F4A4E /* SparkAttribute.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FA9F50215F63D6B00FDE9E0;
+			remoteInfo = SparkAttributeMac;
+		};
+		1AA1373A17BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA136EB17BAAEF7002F4A4E /* SparkAttribute.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 78DDB7CC1647FF0200E7E92F;
+			remoteInfo = SparkAttributeTest;
+		};
+		1AA1373F17BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA136F117BAAEF8002F4A4E /* SparkCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 78B8E68E16C3CC3E0049E36B;
+			remoteInfo = SparkCore;
+		};
+		1AA1374117BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA136F117BAAEF8002F4A4E /* SparkCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 78B8E6A616C3CCA50049E36B;
+			remoteInfo = SparkCoreMac;
+		};
+		1AA1374317BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA136F117BAAEF8002F4A4E /* SparkCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 78B8E6BF16C3CCC00049E36B;
+			remoteInfo = SparkCoreTest;
+		};
+		1AA1374817BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA136F417BAAEF8002F4A4E /* SparkDAO.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 782FC83215B983F100D8B057;
+			remoteInfo = SparkDAO;
+		};
+		1AA1374A17BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA136F417BAAEF8002F4A4E /* SparkDAO.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 78D1B59F16C129ED0097D99F;
+			remoteInfo = SparkDAOMac;
+		};
+		1AA1374C17BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA136F417BAAEF8002F4A4E /* SparkDAO.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 78EC8E5816A57DFC001D2B6D;
+			remoteInfo = SparkDAOTest;
+		};
+		1AA1374F17BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA1370E17BAAEF8002F4A4E /* SparkLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 789AAE3216C4E3FA00FF7FB0;
+			remoteInfo = SparkLogger;
+		};
+		1AA1375417BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA1371117BAAEF8002F4A4E /* SparkObservation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7867EB4216C3C81600A93194;
+			remoteInfo = SparkObservation;
+		};
+		1AA1375617BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA1371117BAAEF8002F4A4E /* SparkObservation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7867EB6316C3C8E400A93194;
+			remoteInfo = SparkObservationMac;
+		};
+		1AA1375817BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA1371117BAAEF8002F4A4E /* SparkObservation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7867EB7F16C3C91B00A93194;
+			remoteInfo = SparkObservationTest;
+		};
+		1AA1375D17BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA1371417BAAEF8002F4A4E /* SparkProcessor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 782762C115CBC52600D33724;
+			remoteInfo = SparkProcessor;
+		};
+		1AA1375F17BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA1371417BAAEF8002F4A4E /* SparkProcessor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9F103B0E15F6469500F9ADD2;
+			remoteInfo = SparkProcessorMac;
+		};
+		1AA1376117BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA1371417BAAEF8002F4A4E /* SparkProcessor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 78FCCB23164BE3D000DA216C;
+			remoteInfo = SparkProcessorTest;
+		};
+		1AA1376617BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA1371D17BAAEF8002F4A4E /* SparkReflection.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 78CD6F9915CA8AB800F6C2F9;
+			remoteInfo = SparkReflection;
+		};
+		1AA1376817BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA1371D17BAAEF8002F4A4E /* SparkReflection.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FA9F4A915F6359700FDE9E0;
+			remoteInfo = SparkReflectionMac;
+		};
+		1AA1376A17BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA1371D17BAAEF8002F4A4E /* SparkReflection.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 78289DF51647C2200036BEFE;
+			remoteInfo = SparkReflectionTest;
+		};
+		1AA1376F17BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA1372017BAAEF8002F4A4E /* SparkSerialization.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9F0A8AB415C299340044A782;
+			remoteInfo = SparkSerialization;
+		};
+		1AA1377117BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA1372017BAAEF8002F4A4E /* SparkSerialization.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FA9F4D415F636C400FDE9E0;
+			remoteInfo = SparkSerializationMac;
+		};
+		1AA1377317BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA1372017BAAEF8002F4A4E /* SparkSerialization.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7841617D16480C1D0089FDE9;
+			remoteInfo = SparkSerializationTest;
+		};
+		1AA1377817BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA1372317BAAEF9002F4A4E /* SparkServices.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7869944D16AEBF3E00B28760;
+			remoteInfo = SparkServices;
+		};
+		1AA1377A17BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA1372317BAAEF9002F4A4E /* SparkServices.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 786994E416AEC09E00B28760;
+			remoteInfo = SparkServicesMac;
+		};
+		1AA1377C17BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA1372317BAAEF9002F4A4E /* SparkServices.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5ACD214F1741179500CC61AC;
+			remoteInfo = SparkServicesTest;
+		};
+		1AA1378017BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA1372617BAAEF9002F4A4E /* SparkWebservice.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 78FB204215BD336B00C2137A;
+			remoteInfo = SparkWebservice;
+		};
+		1AA1378217BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA1372617BAAEF9002F4A4E /* SparkWebservice.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 783AF1A31650FAF800AD247E;
+			remoteInfo = SparkWebserviceTest;
+		};
+		1AA1378717BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA1373017BAAEF9002F4A4E /* SparkWorkflow.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9F4FECCA15C6B73B00B550FF;
+			remoteInfo = SparkWorkflow;
+		};
+		1AA1378917BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA1373017BAAEF9002F4A4E /* SparkWorkflow.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FA9F47715F6241C00FDE9E0;
+			remoteInfo = SparkWorkflowMac;
+		};
+		1AA1378B17BAAEF9002F4A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA1373017BAAEF9002F4A4E /* SparkWorkflow.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 78DD7335164A6579009B334C;
+			remoteInfo = SparkWorkflowTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A797F6817B9371800F59C1C /* VKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A797F6B17B9371800F59C1C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1A797F6D17B9371800F59C1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A797F6F17B9371800F59C1C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1A797F7317B9371800F59C1C /* VKDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VKDemo-Info.plist"; sourceTree = "<group>"; };
+		1A797F7517B9371800F59C1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A797F7717B9371800F59C1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A797F7917B9371800F59C1C /* VKDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VKDemo-Prefix.pch"; sourceTree = "<group>"; };
+		1A797F7A17B9371800F59C1C /* VKDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKDAppDelegate.h; sourceTree = "<group>"; };
+		1A797F7B17B9371800F59C1C /* VKDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKDAppDelegate.m; sourceTree = "<group>"; };
+		1A797F7D17B9371800F59C1C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1A797F7F17B9371800F59C1C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1A797F8117B9371800F59C1C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1A797F8417B9371800F59C1C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		1A797F8E17B9389700F59C1C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		1A797F9017B9389E00F59C1C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1A797F9217B938A500F59C1C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		1A797F9817B93D4C00F59C1C /* TempAttributes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TempAttributes; sourceTree = "<group>"; };
+		1A797F9A17B93E6100F59C1C /* VKDRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKDRootViewController.m; sourceTree = "<group>"; };
+		1A797F9B17B93E6100F59C1C /* VKDRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKDRootViewController.h; sourceTree = "<group>"; };
+		1A797FA517B93F1300F59C1C /* VKDModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VKDModel.xcdatamodel; sourceTree = "<group>"; };
+		1A797FA717B93F3000F59C1C /* hat_vk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hat_vk.png; sourceTree = "<group>"; };
+		1A797FA917B93F4F00F59C1C /* VKDUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKDUserCell.m; sourceTree = "<group>"; };
+		1A797FAA17B93F4F00F59C1C /* VKDDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKDDetailViewController.m; sourceTree = "<group>"; };
+		1A797FAB17B93F4F00F59C1C /* VKDDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKDDetailViewController.h; sourceTree = "<group>"; };
+		1A797FAC17B93F4F00F59C1C /* VKDUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKDUserCell.h; sourceTree = "<group>"; };
+		1A797FAF17B93F5B00F59C1C /* VKDUserWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKDUserWrapper.h; sourceTree = "<group>"; };
+		1A797FB017B93F5B00F59C1C /* VKDUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKDUser.h; sourceTree = "<group>"; };
+		1A797FB117B93F5B00F59C1C /* VKDUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKDUser.m; sourceTree = "<group>"; };
+		1A797FB217B93F5B00F59C1C /* VKDUserWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKDUserWrapper.m; sourceTree = "<group>"; };
+		1A797FB517B93F6100F59C1C /* VKDUIAssistance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKDUIAssistance.m; sourceTree = "<group>"; };
+		1A797FB617B93F6100F59C1C /* VKDUIAssistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKDUIAssistance.h; sourceTree = "<group>"; };
+		1A797FB817B93F6700F59C1C /* VKDAuthenticationProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKDAuthenticationProvider.m; sourceTree = "<group>"; };
+		1A797FB917B93F6700F59C1C /* ESDWebServiceClient+VKDemoAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ESDWebServiceClient+VKDemoAPI.h"; sourceTree = "<group>"; };
+		1A797FBA17B93F6700F59C1C /* VKDAuthenticationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKDAuthenticationProvider.h; sourceTree = "<group>"; };
+		1AA136EB17BAAEF7002F4A4E /* SparkAttribute.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SparkAttribute.xcodeproj; path = code/Framework/Frontend/SparkAttribute/SparkAttribute.xcodeproj; sourceTree = "<group>"; };
+		1AA136F117BAAEF8002F4A4E /* SparkCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SparkCore.xcodeproj; path = code/Framework/Frontend/SparkCore/SparkCore.xcodeproj; sourceTree = "<group>"; };
+		1AA136F417BAAEF8002F4A4E /* SparkDAO.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SparkDAO.xcodeproj; path = code/Framework/Frontend/SparkDAO/SparkDAO.xcodeproj; sourceTree = "<group>"; };
+		1AA1370E17BAAEF8002F4A4E /* SparkLogger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SparkLogger.xcodeproj; path = code/Framework/Frontend/SparkLogger/SparkLogger.xcodeproj; sourceTree = "<group>"; };
+		1AA1371117BAAEF8002F4A4E /* SparkObservation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SparkObservation.xcodeproj; path = code/Framework/Frontend/SparkObservation/SparkObservation.xcodeproj; sourceTree = "<group>"; };
+		1AA1371417BAAEF8002F4A4E /* SparkProcessor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SparkProcessor.xcodeproj; path = code/Framework/Frontend/SparkProcessor/SparkProcessor.xcodeproj; sourceTree = "<group>"; };
+		1AA1371D17BAAEF8002F4A4E /* SparkReflection.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SparkReflection.xcodeproj; path = code/Framework/Frontend/SparkReflection/SparkReflection.xcodeproj; sourceTree = "<group>"; };
+		1AA1372017BAAEF8002F4A4E /* SparkSerialization.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SparkSerialization.xcodeproj; path = code/Framework/Frontend/SparkSerialization/SparkSerialization.xcodeproj; sourceTree = "<group>"; };
+		1AA1372317BAAEF9002F4A4E /* SparkServices.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SparkServices.xcodeproj; path = code/Framework/Frontend/SparkServices/SparkServices.xcodeproj; sourceTree = "<group>"; };
+		1AA1372617BAAEF9002F4A4E /* SparkWebservice.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SparkWebservice.xcodeproj; path = code/Framework/Frontend/SparkWebService/SparkWebservice.xcodeproj; sourceTree = "<group>"; };
+		1AA1373017BAAEF9002F4A4E /* SparkWorkflow.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SparkWorkflow.xcodeproj; path = code/Framework/Frontend/SparkWorkflow/SparkWorkflow.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A797F6517B9371800F59C1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AA1378D17BAB167002F4A4E /* libSparkAttribute.a in Frameworks */,
+				1AA1378E17BAB167002F4A4E /* libSparkCore.a in Frameworks */,
+				1AA1378F17BAB167002F4A4E /* libSparkDAO.a in Frameworks */,
+				1AA1379017BAB167002F4A4E /* libSparkLogger.a in Frameworks */,
+				1AA1379117BAB167002F4A4E /* libSparkObservation.a in Frameworks */,
+				1AA1379217BAB167002F4A4E /* libSparkProcessor.a in Frameworks */,
+				1AA1379317BAB167002F4A4E /* libSparkReflection.a in Frameworks */,
+				1AA1379417BAB167002F4A4E /* libSparkSerialization.a in Frameworks */,
+				1AA1379517BAB167002F4A4E /* libSparkServices.a in Frameworks */,
+				1AA1379617BAB167002F4A4E /* libSparkWebservice.a in Frameworks */,
+				1AA1379717BAB167002F4A4E /* libSparkWorkflow.a in Frameworks */,
+				1A797F9317B938A500F59C1C /* CFNetwork.framework in Frameworks */,
+				1A797F9117B9389E00F59C1C /* CoreData.framework in Frameworks */,
+				1A797F8F17B9389700F59C1C /* libz.dylib in Frameworks */,
+				1A797F6C17B9371800F59C1C /* UIKit.framework in Frameworks */,
+				1A797F6E17B9371800F59C1C /* Foundation.framework in Frameworks */,
+				1A797F7017B9371800F59C1C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A797F5F17B9371800F59C1C = {
+			isa = PBXGroup;
+			children = (
+				1A797F7117B9371800F59C1C /* VKDemo */,
+				1A797F6A17B9371800F59C1C /* Frameworks */,
+				1A797F6917B9371800F59C1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A797F6917B9371800F59C1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A797F6817B9371800F59C1C /* VKDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A797F6A17B9371800F59C1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A797FBD17B93F9D00F59C1C /* Apple */,
+				1A797FBC17B93F9300F59C1C /* Vendor */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A797F7117B9371800F59C1C /* VKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1A797F9B17B93E6100F59C1C /* VKDRootViewController.h */,
+				1A797F9A17B93E6100F59C1C /* VKDRootViewController.m */,
+				1A797F7A17B9371800F59C1C /* VKDAppDelegate.h */,
+				1A797F7B17B9371800F59C1C /* VKDAppDelegate.m */,
+				1A797F9F17B93E7800F59C1C /* Model */,
+				1A797F9E17B93E7000F59C1C /* Utility */,
+				1A797F9D17B93E6800F59C1C /* Services */,
+				1A797FA017B93E8400F59C1C /* UI Controls */,
+				1A797FA117B93EBE00F59C1C /* Resources */,
+				1A797F9817B93D4C00F59C1C /* TempAttributes */,
+				1A797F7217B9371800F59C1C /* Supporting Files */,
+			);
+			path = VKDemo;
+			sourceTree = "<group>";
+		};
+		1A797F7217B9371800F59C1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A797F7317B9371800F59C1C /* VKDemo-Info.plist */,
+				1A797F7417B9371800F59C1C /* InfoPlist.strings */,
+				1A797F7717B9371800F59C1C /* main.m */,
+				1A797F7917B9371800F59C1C /* VKDemo-Prefix.pch */,
+				1A797F7D17B9371800F59C1C /* Default.png */,
+				1A797F7F17B9371800F59C1C /* Default@2x.png */,
+				1A797F8117B9371800F59C1C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A797F9D17B93E6800F59C1C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1A797FB817B93F6700F59C1C /* VKDAuthenticationProvider.m */,
+				1A797FB917B93F6700F59C1C /* ESDWebServiceClient+VKDemoAPI.h */,
+				1A797FBA17B93F6700F59C1C /* VKDAuthenticationProvider.h */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1A797F9E17B93E7000F59C1C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1A797FB617B93F6100F59C1C /* VKDUIAssistance.h */,
+				1A797FB517B93F6100F59C1C /* VKDUIAssistance.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		1A797F9F17B93E7800F59C1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A797FB017B93F5B00F59C1C /* VKDUser.h */,
+				1A797FB117B93F5B00F59C1C /* VKDUser.m */,
+				1A797FAF17B93F5B00F59C1C /* VKDUserWrapper.h */,
+				1A797FB217B93F5B00F59C1C /* VKDUserWrapper.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A797FA017B93E8400F59C1C /* UI Controls */ = {
+			isa = PBXGroup;
+			children = (
+				1A797FAC17B93F4F00F59C1C /* VKDUserCell.h */,
+				1A797FA917B93F4F00F59C1C /* VKDUserCell.m */,
+				1A797FAB17B93F4F00F59C1C /* VKDDetailViewController.h */,
+				1A797FAA17B93F4F00F59C1C /* VKDDetailViewController.m */,
+			);
+			path = "UI Controls";
+			sourceTree = "<group>";
+		};
+		1A797FA117B93EBE00F59C1C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A797F8317B9371800F59C1C /* MainStoryboard.storyboard */,
+				1A797FA417B93F1300F59C1C /* VKDModel.xcdatamodeld */,
+				1A797FA217B93ED100F59C1C /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1A797FA217B93ED100F59C1C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1A797FA717B93F3000F59C1C /* hat_vk.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		1A797FBC17B93F9300F59C1C /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				1AA136EB17BAAEF7002F4A4E /* SparkAttribute.xcodeproj */,
+				1AA136F117BAAEF8002F4A4E /* SparkCore.xcodeproj */,
+				1AA136F417BAAEF8002F4A4E /* SparkDAO.xcodeproj */,
+				1AA1370E17BAAEF8002F4A4E /* SparkLogger.xcodeproj */,
+				1AA1371117BAAEF8002F4A4E /* SparkObservation.xcodeproj */,
+				1AA1371417BAAEF8002F4A4E /* SparkProcessor.xcodeproj */,
+				1AA1371D17BAAEF8002F4A4E /* SparkReflection.xcodeproj */,
+				1AA1372017BAAEF8002F4A4E /* SparkSerialization.xcodeproj */,
+				1AA1372317BAAEF9002F4A4E /* SparkServices.xcodeproj */,
+				1AA1372617BAAEF9002F4A4E /* SparkWebservice.xcodeproj */,
+				1AA1373017BAAEF9002F4A4E /* SparkWorkflow.xcodeproj */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		1A797FBD17B93F9D00F59C1C /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				1A797F8E17B9389700F59C1C /* libz.dylib */,
+				1A797F9217B938A500F59C1C /* CFNetwork.framework */,
+				1A797F9017B9389E00F59C1C /* CoreData.framework */,
+				1A797F6B17B9371800F59C1C /* UIKit.framework */,
+				1A797F6D17B9371800F59C1C /* Foundation.framework */,
+				1A797F6F17B9371800F59C1C /* CoreGraphics.framework */,
+			);
+			name = Apple;
+			sourceTree = "<group>";
+		};
+		1AA136EC17BAAEF7002F4A4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AA1373717BAAEF9002F4A4E /* libSparkAttribute.a */,
+				1AA1373917BAAEF9002F4A4E /* SparkAttribute.framework */,
+				1AA1373B17BAAEF9002F4A4E /* SparkAttributeTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AA136F217BAAEF8002F4A4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AA1374017BAAEF9002F4A4E /* libSparkCore.a */,
+				1AA1374217BAAEF9002F4A4E /* SparkCore.framework */,
+				1AA1374417BAAEF9002F4A4E /* SparkCoreTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AA136F517BAAEF8002F4A4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AA1374917BAAEF9002F4A4E /* libSparkDAO.a */,
+				1AA1374B17BAAEF9002F4A4E /* SparkDAO.framework */,
+				1AA1374D17BAAEF9002F4A4E /* SparkDAOTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AA1370F17BAAEF8002F4A4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AA1375017BAAEF9002F4A4E /* libSparkLogger.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AA1371217BAAEF8002F4A4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AA1375517BAAEF9002F4A4E /* libSparkObservation.a */,
+				1AA1375717BAAEF9002F4A4E /* SparkObservation.framework */,
+				1AA1375917BAAEF9002F4A4E /* SparkObservationTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AA1371517BAAEF8002F4A4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AA1375E17BAAEF9002F4A4E /* libSparkProcessor.a */,
+				1AA1376017BAAEF9002F4A4E /* SparkProcessor.framework */,
+				1AA1376217BAAEF9002F4A4E /* SparkProcessorTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AA1371E17BAAEF8002F4A4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AA1376717BAAEF9002F4A4E /* libSparkReflection.a */,
+				1AA1376917BAAEF9002F4A4E /* SparkReflection.framework */,
+				1AA1376B17BAAEF9002F4A4E /* SparkReflectionTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AA1372117BAAEF8002F4A4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AA1377017BAAEF9002F4A4E /* libSparkSerialization.a */,
+				1AA1377217BAAEF9002F4A4E /* SparkSerialization.framework */,
+				1AA1377417BAAEF9002F4A4E /* SparkSerializationTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AA1372417BAAEF9002F4A4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AA1377917BAAEF9002F4A4E /* libSparkServices.a */,
+				1AA1377B17BAAEF9002F4A4E /* SparkServices.framework */,
+				1AA1377D17BAAEF9002F4A4E /* SparkServicesTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AA1372717BAAEF9002F4A4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AA1378117BAAEF9002F4A4E /* libSparkWebservice.a */,
+				1AA1378317BAAEF9002F4A4E /* SparkWebserviceTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AA1373117BAAEF9002F4A4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AA1378817BAAEF9002F4A4E /* libSparkWorkflow.a */,
+				1AA1378A17BAAEF9002F4A4E /* SparkWorkflow.framework */,
+				1AA1378C17BAAEF9002F4A4E /* SparkWorkflowTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A797F6717B9371800F59C1C /* VKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A797F8B17B9371800F59C1C /* Build configuration list for PBXNativeTarget "VKDemo" */;
+			buildPhases = (
+				1A797F6417B9371800F59C1C /* Sources */,
+				1A797F6517B9371800F59C1C /* Frameworks */,
+				1A797F9517B938E700F59C1C /* ShellScript */,
+				1A797F6617B9371800F59C1C /* Resources */,
+				1A797F9617B93CCB00F59C1C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VKDemo;
+			productName = VKDemo;
+			productReference = 1A797F6817B9371800F59C1C /* VKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A797F6017B9371800F59C1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VKD;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Valery Demin";
+			};
+			buildConfigurationList = 1A797F6317B9371800F59C1C /* Build configuration list for PBXProject "VKDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1A797F5F17B9371800F59C1C;
+			productRefGroup = 1A797F6917B9371800F59C1C /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1AA136EC17BAAEF7002F4A4E /* Products */;
+					ProjectRef = 1AA136EB17BAAEF7002F4A4E /* SparkAttribute.xcodeproj */;
+				},
+				{
+					ProductGroup = 1AA136F217BAAEF8002F4A4E /* Products */;
+					ProjectRef = 1AA136F117BAAEF8002F4A4E /* SparkCore.xcodeproj */;
+				},
+				{
+					ProductGroup = 1AA136F517BAAEF8002F4A4E /* Products */;
+					ProjectRef = 1AA136F417BAAEF8002F4A4E /* SparkDAO.xcodeproj */;
+				},
+				{
+					ProductGroup = 1AA1370F17BAAEF8002F4A4E /* Products */;
+					ProjectRef = 1AA1370E17BAAEF8002F4A4E /* SparkLogger.xcodeproj */;
+				},
+				{
+					ProductGroup = 1AA1371217BAAEF8002F4A4E /* Products */;
+					ProjectRef = 1AA1371117BAAEF8002F4A4E /* SparkObservation.xcodeproj */;
+				},
+				{
+					ProductGroup = 1AA1371517BAAEF8002F4A4E /* Products */;
+					ProjectRef = 1AA1371417BAAEF8002F4A4E /* SparkProcessor.xcodeproj */;
+				},
+				{
+					ProductGroup = 1AA1371E17BAAEF8002F4A4E /* Products */;
+					ProjectRef = 1AA1371D17BAAEF8002F4A4E /* SparkReflection.xcodeproj */;
+				},
+				{
+					ProductGroup = 1AA1372117BAAEF8002F4A4E /* Products */;
+					ProjectRef = 1AA1372017BAAEF8002F4A4E /* SparkSerialization.xcodeproj */;
+				},
+				{
+					ProductGroup = 1AA1372417BAAEF9002F4A4E /* Products */;
+					ProjectRef = 1AA1372317BAAEF9002F4A4E /* SparkServices.xcodeproj */;
+				},
+				{
+					ProductGroup = 1AA1372717BAAEF9002F4A4E /* Products */;
+					ProjectRef = 1AA1372617BAAEF9002F4A4E /* SparkWebservice.xcodeproj */;
+				},
+				{
+					ProductGroup = 1AA1373117BAAEF9002F4A4E /* Products */;
+					ProjectRef = 1AA1373017BAAEF9002F4A4E /* SparkWorkflow.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1A797F6717B9371800F59C1C /* VKDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1AA1373717BAAEF9002F4A4E /* libSparkAttribute.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSparkAttribute.a;
+			remoteRef = 1AA1373617BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1373917BAAEF9002F4A4E /* SparkAttribute.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SparkAttribute.framework;
+			remoteRef = 1AA1373817BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1373B17BAAEF9002F4A4E /* SparkAttributeTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SparkAttributeTest.octest;
+			remoteRef = 1AA1373A17BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1374017BAAEF9002F4A4E /* libSparkCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSparkCore.a;
+			remoteRef = 1AA1373F17BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1374217BAAEF9002F4A4E /* SparkCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SparkCore.framework;
+			remoteRef = 1AA1374117BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1374417BAAEF9002F4A4E /* SparkCoreTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SparkCoreTest.octest;
+			remoteRef = 1AA1374317BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1374917BAAEF9002F4A4E /* libSparkDAO.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSparkDAO.a;
+			remoteRef = 1AA1374817BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1374B17BAAEF9002F4A4E /* SparkDAO.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SparkDAO.framework;
+			remoteRef = 1AA1374A17BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1374D17BAAEF9002F4A4E /* SparkDAOTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SparkDAOTest.octest;
+			remoteRef = 1AA1374C17BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1375017BAAEF9002F4A4E /* libSparkLogger.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSparkLogger.a;
+			remoteRef = 1AA1374F17BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1375517BAAEF9002F4A4E /* libSparkObservation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSparkObservation.a;
+			remoteRef = 1AA1375417BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1375717BAAEF9002F4A4E /* SparkObservation.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SparkObservation.framework;
+			remoteRef = 1AA1375617BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1375917BAAEF9002F4A4E /* SparkObservationTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SparkObservationTest.octest;
+			remoteRef = 1AA1375817BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1375E17BAAEF9002F4A4E /* libSparkProcessor.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSparkProcessor.a;
+			remoteRef = 1AA1375D17BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1376017BAAEF9002F4A4E /* SparkProcessor.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SparkProcessor.framework;
+			remoteRef = 1AA1375F17BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1376217BAAEF9002F4A4E /* SparkProcessorTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SparkProcessorTest.octest;
+			remoteRef = 1AA1376117BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1376717BAAEF9002F4A4E /* libSparkReflection.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSparkReflection.a;
+			remoteRef = 1AA1376617BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1376917BAAEF9002F4A4E /* SparkReflection.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SparkReflection.framework;
+			remoteRef = 1AA1376817BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1376B17BAAEF9002F4A4E /* SparkReflectionTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SparkReflectionTest.octest;
+			remoteRef = 1AA1376A17BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1377017BAAEF9002F4A4E /* libSparkSerialization.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSparkSerialization.a;
+			remoteRef = 1AA1376F17BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1377217BAAEF9002F4A4E /* SparkSerialization.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SparkSerialization.framework;
+			remoteRef = 1AA1377117BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1377417BAAEF9002F4A4E /* SparkSerializationTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SparkSerializationTest.octest;
+			remoteRef = 1AA1377317BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1377917BAAEF9002F4A4E /* libSparkServices.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSparkServices.a;
+			remoteRef = 1AA1377817BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1377B17BAAEF9002F4A4E /* SparkServices.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SparkServices.framework;
+			remoteRef = 1AA1377A17BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1377D17BAAEF9002F4A4E /* SparkServicesTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SparkServicesTest.octest;
+			remoteRef = 1AA1377C17BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1378117BAAEF9002F4A4E /* libSparkWebservice.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSparkWebservice.a;
+			remoteRef = 1AA1378017BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1378317BAAEF9002F4A4E /* SparkWebserviceTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SparkWebserviceTest.octest;
+			remoteRef = 1AA1378217BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1378817BAAEF9002F4A4E /* libSparkWorkflow.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSparkWorkflow.a;
+			remoteRef = 1AA1378717BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1378A17BAAEF9002F4A4E /* SparkWorkflow.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SparkWorkflow.framework;
+			remoteRef = 1AA1378917BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AA1378C17BAAEF9002F4A4E /* SparkWorkflowTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SparkWorkflowTest.octest;
+			remoteRef = 1AA1378B17BAAEF9002F4A4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A797F6617B9371800F59C1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A797F7617B9371800F59C1C /* InfoPlist.strings in Resources */,
+				1A797F7E17B9371800F59C1C /* Default.png in Resources */,
+				1A797F8017B9371800F59C1C /* Default@2x.png in Resources */,
+				1A797F8217B9371800F59C1C /* Default-568h@2x.png in Resources */,
+				1A797F8517B9371800F59C1C /* MainStoryboard.storyboard in Resources */,
+				1A797F9917B93D4C00F59C1C /* TempAttributes in Resources */,
+				1A797FA817B93F3000F59C1C /* hat_vk.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A797F9517B938E700F59C1C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/${PROJECT_NAME}/PreprocessorAttributeParser\" -o=\"${SRCROOT}/${PROJECT_NAME}/TempAttributes\"";
+		};
+		1A797F9617B93CCB00F59C1C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Copy resource files to bundle\"\nSRC=\"${SRCROOT}/${PROJECT_NAME}/Spark.framework/Resources/\"\nDEST=\"$BUILD_DIR/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/$FULL_PRODUCT_NAME/\"\ncp -R $SRC $DEST";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A797F6417B9371800F59C1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A797F7817B9371800F59C1C /* main.m in Sources */,
+				1A797F7C17B9371800F59C1C /* VKDAppDelegate.m in Sources */,
+				1A797F9C17B93E6100F59C1C /* VKDRootViewController.m in Sources */,
+				1A797FA617B93F1300F59C1C /* VKDModel.xcdatamodeld in Sources */,
+				1A797FAD17B93F4F00F59C1C /* VKDUserCell.m in Sources */,
+				1A797FAE17B93F4F00F59C1C /* VKDDetailViewController.m in Sources */,
+				1A797FB317B93F5B00F59C1C /* VKDUser.m in Sources */,
+				1A797FB417B93F5B00F59C1C /* VKDUserWrapper.m in Sources */,
+				1A797FB717B93F6100F59C1C /* VKDUIAssistance.m in Sources */,
+				1A797FBB17B93F6700F59C1C /* VKDAuthenticationProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1A797F7417B9371800F59C1C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A797F7517B9371800F59C1C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1A797F8317B9371800F59C1C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A797F8417B9371800F59C1C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A797F8917B9371800F59C1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1A797F8A17B9371800F59C1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A797F8C17B9371800F59C1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/VKDemo\"",
+					"\"$(SRCROOT)/Vendor/code/Framework/Frontend/Spark/Products\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VKDemo/VKDemo-Prefix.pch";
+				INFOPLIST_FILE = "VKDemo/VKDemo-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1A797F8D17B9371800F59C1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/VKDemo\"",
+					"\"$(SRCROOT)/Vendor/code/Framework/Frontend/Spark/Products\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VKDemo/VKDemo-Prefix.pch";
+				INFOPLIST_FILE = "VKDemo/VKDemo-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A797F6317B9371800F59C1C /* Build configuration list for PBXProject "VKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A797F8917B9371800F59C1C /* Debug */,
+				1A797F8A17B9371800F59C1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A797F8B17B9371800F59C1C /* Build configuration list for PBXNativeTarget "VKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A797F8C17B9371800F59C1C /* Debug */,
+				1A797F8D17B9371800F59C1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1A797FA417B93F1300F59C1C /* VKDModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1A797FA517B93F1300F59C1C /* VKDModel.xcdatamodel */,
+			);
+			currentVersion = 1A797FA517B93F1300F59C1C /* VKDModel.xcdatamodel */;
+			path = VKDModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1A797F6017B9371800F59C1C /* Project object */;
+}
