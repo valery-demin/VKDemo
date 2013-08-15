@@ -9,12 +9,4 @@ The app gets statuses for friends list and shows them. The app saves data from s
 The application displays a list of users that are don't have empty statuses
 
 ---------
-
-If when you build the application, you have the error ".../VKDemo/Vendor/PreprocessorAttributeParser: Permission denied", run the following command in Terminal.app:
-
-	chmod +x <app directory>/VKDemo/PreprocessorAttributeParser
-
-where **&lt;app directory>** is directory where the file of project (**VKDemo.xcodeproj**) is located.
-
----------
 brief note: project depends on gitmodules
