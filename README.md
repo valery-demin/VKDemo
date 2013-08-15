@@ -10,11 +10,6 @@ The application displays a list of users that are don't have empty statuses
 
 ---------
 
-- Open **'Vendor/code/Framework/Frontend/Spark.xcworkspace'** and build **'FrameworkBuildScript'** for **iOS Device** 
-- Copy the **Spark.framework** folder from **'Vendor/code/Framework/Frontend/Spark/Products'** to **'VKDemo/VKDemo/Spark.framework'**
-
----------
-
 If when you build the application, you have the error ".../VKDemo/Vendor/PreprocessorAttributeParser: Permission denied", run the following command in Terminal.app:
 
 	chmod +x <app directory>/VKDemo/PreprocessorAttributeParser
