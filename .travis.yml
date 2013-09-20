@@ -1,0 +1,6 @@
+language: objective-c
+script:
+    - xctool -project VKDemo.xcodeproj -scheme VKDemo build
+notifications:
+  email:
+    - Valery_Demin@epam.com
