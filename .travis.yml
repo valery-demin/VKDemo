@@ -1,6 +1,5 @@
 language: objective-c
 script:
-    - xctool -project VKDemo.xcodeproj -scheme VKDemo build
     - oclint-xcodebuild
 notifications:
   email:
